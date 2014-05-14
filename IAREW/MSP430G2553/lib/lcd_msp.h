@@ -1,14 +1,4 @@
-/***********************************
-*
-* www.fatihinanc.com
-* 
-* Muhammed Fatih ÝNANÇ
-* 25.10.2010
-*
-* MSP430 için 2x16 LCD Kütüphanesi
-* 
-*
-***********************************/
+
 
 #define delay_us(x)     __delay_cycles(x)
 #define delay_ms(x)     __delay_cycles((x * 1000L))
@@ -21,9 +11,9 @@
 #define LCD_EN(x)       ( (x) ? (LCD_CONTROL |= BIT6) : (LCD_CONTROL &= ~BIT6) )
 
 
-void lcd_komut(unsigned char); // LCD ye komut göndermeye yarar
-void lcd_temizle(void);        // LCD ekraný temizler
+void lcd_komut(unsigned char); // LCD ye komut gï¿½ndermeye yarar
+void lcd_temizle(void);        // LCD ekranï¿½ temizler
 void lcd_puts(const char*);    // LCD ye string ifade yazar
-void lcd_goto(char,char);      // LCD de satýr ve stün olarak istenilen yere gider
-void lcd_init(void);           // LCD baþlangýç ayarlarý yapýlýr
-void lcd_putch(char);          // LCD ye tek karakter yazmak için kullanýlýr.
+void lcd_goto(char,char);      // LCD de satï¿½r ve stï¿½n olarak istenilen yere gider
+void lcd_init(void);           // LCD baï¿½langï¿½ï¿½ ayarlarï¿½ yapï¿½lï¿½r
+void lcd_putch(char);          // LCD ye tek karakter yazmak iï¿½in kullanï¿½lï¿½r.
